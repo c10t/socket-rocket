@@ -28,7 +28,7 @@ io.on("connection", socket => {
 
 const getAPIandEmit = async socket => {
   try {
-    const res = await axios.get("http://localhost:2929/");
+    const res = await axios.get("http://localhost:3000/values");
   } catch (error) {
     console.error(`ERROR: ${error.code}`);
   }
